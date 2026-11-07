@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+
+            width: 500px;
+            height: 300px;
+
+            border: 4px solid black;
+            background-color: lightgray;
+            padding: 15px;
+        }
+
+        .box {
+            width: 120px;
+            height: 50px;
+            border: 2px solid blue;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Moves 30px lext, 10px down */
+        .relative {
+            position: relative;
+            left: 30px;
+            top: 10px;
+            background-color: orange;
+        }
+
+        /* 10px from the parent's right edge, 10px from the parent's bottom edge. */
+        .absolute {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+
+            width: 120px;
+            height: 60px;
+
+            background-color: lightgreen;
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Position relative and absolute</h1>
+
+    <div class="container">
+
+        <div class="box">
+            Normal box 1
+        </div>
+
+        <div class="box relative">
+            Relative box
+        </div>
+
+        <div class="box">
+            Normal box 2
+        </div>
+
+        <div class="absolute">
+            Absolute box
+        </div>
+
+    </div>
+
+</body>
+</html>
